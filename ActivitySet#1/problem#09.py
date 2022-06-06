@@ -8,3 +8,4 @@ for l in fn:
     	if word not in lst:
         	lst.append(word)
 print(sorted(lst))
+
