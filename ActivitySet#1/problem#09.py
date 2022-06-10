@@ -1,5 +1,5 @@
 fname = input("Enter file name: ")
-fn = open(fname)
+fn =open(fname)
 lst = []
 for l in fn:
     #l = l.rstrip()
