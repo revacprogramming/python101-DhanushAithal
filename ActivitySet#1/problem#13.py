@@ -9,8 +9,8 @@ for line in fopen:
     continue
   if line.startswith("From"):
     line=line.split()
-    time=line[5]
-    hr=time[:2]#[0:2]
+    time= line[5]
+    hr= time[:2]#[0:2]
     di_ct[hr]=di_ct.get(hr,0)+1
 lst=list(di_ct.items())
 lst.sort()
