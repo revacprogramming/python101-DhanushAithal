@@ -1,9 +1,18 @@
-import re
-count = 0
-hand = open("regex_sum_1548641.txt.opdownload")
-lines = hand.read()
-match =  re.findall('[0-9]+',lines)
-for i in match:
-	number = int(i)
-	count = count + number
-print(count)
+import urllib.request, json
+
+address = input('Enter location: ')
+print('Retrieving', address)
+with urllib.request.urlopen(address) as url:
+    raw = json.loads(url.read().decode())
+
+print('Retrieved', len(str(raw)), 'characters')
+data = raw.get("comments")
+#print(data)
+num = total = 0
+for i in range(len(data)):
+    tmp = data[i]
+    value = tmp.get("count")
+    num = num + 1
+    total = total + int(value)
+print("Count:",num)
+print("Sum:",total)
