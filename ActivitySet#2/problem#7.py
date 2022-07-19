@@ -12,7 +12,7 @@ class Menu():
 
 
 
-m =Menu("idly", 10) 
+m=Menu("idly", 10) 
 n=Menu("vada", 20)
 sum=m+n
 #m3=Menu('dosa',30)
