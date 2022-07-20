@@ -12,7 +12,7 @@ class Bill:
     """fill in class definition here"""
 
 
-m = Menu()
+m =Menu()
 m["idly"] = 20
 m["vada"] = 20
 
