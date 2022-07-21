@@ -14,7 +14,7 @@ class Bill:
 
 m =Menu()
 m["idly"] = 20
-m["vada"] = 20
+m["vada"] =20
 
 o = Order(m)
 try:
