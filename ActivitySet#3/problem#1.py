@@ -1,7 +1,7 @@
 import math
 
 def distance(x,X,y,Y):
-  dist=math.sqrt( ((X-x)**2) - ((Y-y)**2))
+  dist= math.sqrt( ((X-x)**2) - ((Y-y)**2))
   return dist
 def main():
  x1,x2,x3,y1,y2,y3=input("x1:"),input("x2:"),input("x3:"),input("y1:"),input("y2:"),input("y3:")
